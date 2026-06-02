@@ -1,6 +1,3 @@
-# Void Forks
-
-
 This is a list of forks and continuations of Void. It's maintained by AI. To tell the AI to include your project, submit an Issue [here](https://github.com/voideditor/void-forks/issues). Entries are not thoroughly reviewed, and are unaffiliated with the original Void project.
 
 
