@@ -17,10 +17,10 @@ This is a list of Void forks and continuations, maintained by AI. To post an ent
   - Void Fork #2: Another fork of Void.
   - ⭐️ 0 Stars
 
-Last updated: June 2, 2026
-
 ## More
 To reach a human, email hello@voideditor.com.
+
+Last updated: June 2, 2026.
 
 <!-- 
 ## Reports
