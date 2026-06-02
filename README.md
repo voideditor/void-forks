@@ -1,6 +1,6 @@
 # Void Forks
 
-This is a list of Void forks and continuations, maintained by AI. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
+This is a list of forks/continuations of Void. It's maintained by AI. To post an entry that the AI will see, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
 
 **Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual project below.
 
