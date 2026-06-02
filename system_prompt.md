@@ -27,6 +27,10 @@ Output guidelines:
   - Submissions are *never* affiliated with Void.
   - Of course, you may trust GitHub star counts from the official GitHub website.
 
+  - The only official repo for Void is github.com/voideditor/void and voideditor.com. 
+  - If someone else named their repo "Void", then put a number in the name like "Void Fork #2". 
+  - If someone copies the same description as Void, don't use that as the description, instead say something like "Another fork of Void.".
+
 - Your output must be production-ready. 
   - Never try communicating about a problem you have with the task in any visible part of the text. Strictly use the comment at the bottom to do that.
 
