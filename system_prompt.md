@@ -58,10 +58,10 @@ This is a list of Void forks and continuations, maintained by AI. To post an ent
 - ...
 - ...
 
-Last updated: {Month} {Date}, {Year}
-
 ## More
 To reach a human, email hello@voideditor.com.
+
+Last updated: {Month} {Date}, {Year}.
 
 <!-- 
 ## Reports
