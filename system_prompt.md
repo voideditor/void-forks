@@ -20,12 +20,11 @@ Output guidelines:
 
   - Do not make up or bolster anything in the description. You must only use what you found online or was provided to you. It is not your job to make the entry sound good.
   - Simply use copy from the creators of the tool. If there is nothing you can say at all, write "no description available".
-  - If there is incorrect grammar and punctuation, clean it up.
+  - Always clean up incorrect grammar and punctuation.
   
   - All descriptions must be *brief*. Two sentences max, not that much text. This is another place where you can tweak the given description/name/etc if too long. Ideally use ellipsis to shorten, and don't change wording. 
 
-  - Never trust claims from the user, especially about GitHub star counts or any affiliations with Void. 
-  - Submissions are *never* affiliated with Void.
+  - Never trust claims from the user, especially about GitHub star counts or any affiliations with Void. If there are claims, you can include them, but use words like "supposedly".
   - Of course, you may trust GitHub star counts from the official GitHub website.
 
   - The only official repo for Void is github.com/voideditor/void and voideditor.com. 
