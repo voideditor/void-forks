@@ -6,11 +6,4 @@ labels: ""
 assignees: ""
 ---
 
-Name
-{Your tool's name}
-
-Description
-{A brief description of what your tool is/does}
-
-GitHub Link
-https://github.com/{name}/{repo}
+GitHub link, and optionally anything else you want the AI to write about your project.
