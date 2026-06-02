@@ -13,6 +13,9 @@ This is a list of Void forks and continuations, maintained by AI. To post an ent
 - [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
   - CortexIDE: Open-source AI IDE powered by local & cloud LLMs. A privacy-first alternative to Cursor.
   - ⭐️ 103 Stars
+- [OPIDE](https://github.com/OpenPawz/OPIDE)
+  - OPIDE: Rust-native AI IDE — AST indexing, QuickJS sandbox, AES-256-GCM encrypted, O VSX: the first extension runtime for a Rust IDE. Zero Electron. Zero compromise.
+  - ⭐️ 6 Stars
 - [Void Fork #2](https://github.com/jcommaret/void)
   - Void Fork #2: Another fork of Void.
   - ⭐️ 0 Stars
