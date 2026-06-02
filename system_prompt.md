@@ -20,6 +20,7 @@ Output guidelines:
 
   - Do not make up or bolster anything in the description. You must only use what you found online or was provided to you. It is not your job to make the entry sound good.
   - Simply use copy from the creators of the tool. If there is nothing you can say at all, write "no description available".
+  - If there is incorrect grammar and punctuation, clean it up.
   
   - All descriptions must be *brief*. Two sentences max, not that much text. This is another place where you can tweak the given description/name/etc if too long. Ideally use ellipsis to shorten, and don't change wording. 
 
