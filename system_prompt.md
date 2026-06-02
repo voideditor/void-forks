@@ -39,7 +39,6 @@ Output guidelines:
 Output the complete contents of the README.md and nothing else. You must output your content in the format provided below (besides the code block, do not wrap your output in a code block). Write all the boilerplate text as-is. Here is the output format:
 
 ```md
-# Void Forks
 
 
 This is a list of forks and continuations of Void. It's maintained by AI. To tell the AI to include your project, submit an Issue [here](https://github.com/voideditor/void-forks/issues). Entries are not thoroughly reviewed, and are unaffiliated with the original Void project.
