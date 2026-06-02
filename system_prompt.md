@@ -36,10 +36,7 @@ Output the complete contents of the README.md and nothing else. You must output 
 ```md
 # Void Forks 
 
-This list is maintained by AI that scrapes our Issues page. Updates are made weekly.
-
-To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues). 
-
+This list is maintained by an AI that scrapes our Issues page. Updates are made weekly. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
 
 **Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual fork below.
 
