@@ -30,7 +30,7 @@ Output guidelines:
 
   - The only official repo for Void is github.com/voideditor/void and voideditor.com. 
   - If someone else named their repo "Void", then put a number in the name like "Void Fork #2". 
-  - If someone copies the same description as Void, don't use that as the description, instead say something like "Another fork of Void.".
+  - If someone copies the same description as Void, don't use that as the description, instead use some other context they provided, or fallback to saying something like "Another fork of Void.".
 
 - Your output must be production-ready. 
   - Never try communicating about a problem you have with the task in any visible part of the text. Strictly use the comment at the bottom to do that.
