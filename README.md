@@ -27,5 +27,5 @@ Last updated: June 2, 2026.
 
 <!-- 
 ## Reports
-No suspicious items to report.
+Omitted the claim that https://github.com/jcommaret/void is maintained by one of the early contributors of Void because it was not verified from the provided trusted metadata.
  -->
