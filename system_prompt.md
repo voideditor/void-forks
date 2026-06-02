@@ -40,9 +40,7 @@ Output the complete contents of the README.md and nothing else. You must output 
 ```md
 # Void Forks
 
-This is a list of Void forks and continuations. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
-
-This list is maintained by an AI that scrapes our Issues page. Updates are made weekly.
+This is a list of Void forks and continuations, maintained by AI. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
 
 **Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual project below.
 
