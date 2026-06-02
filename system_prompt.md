@@ -38,14 +38,16 @@ Output guidelines:
 Output the complete contents of the README.md and nothing else. You must output your content in the format provided below (besides the code block, do not wrap your output in a code block). Write all the boilerplate text as-is. Here is the output format:
 
 ```md
-# Void Forks 
+# Void Forks
 
-This list is maintained by an AI that scrapes our Issues page. Updates are made weekly. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
+This is a list of Void forks and continuations. To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues).
 
-**Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual fork below.
+This list is maintained by an AI that scrapes our Issues page. Updates are made weekly.
+
+**Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual project below.
 
 
-## Top Forks
+## Top Projects
 
 - [Name1](https://github.com/{repo})
   - {Name1}: {brief description if available, or github description}
