@@ -2,7 +2,7 @@
 
 This list is maintained by AI that scrapes our Issues page. Updates are made weekly.
 
-To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues). 
+To post an entry, submit an Issue [here](https://github.com/voideditor/void-forks/issues/new?template=fork-submission.md). 
 
 
 **Note**: These entries come from our Issues page, and are completely unaffiliated with the Void team. We don't endorse or vouch for the security of any individual fork below.

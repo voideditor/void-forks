@@ -1,0 +1,272 @@
+name: Update README from issues
+
+on:
+  # TODO: AI-PICKED-VALUE: Monday at 10:00 UTC gives the weekly update a stable time while avoiding the top of the hour.
+  schedule:
+    - cron: "0 10 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: update-readme-from-issues
+  cancel-in-progress: false
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Build README with issue submissions
+        uses: actions/github-script@v9
+        env:
+          # TODO: AI-PICKED-VALUE: gpt-5.5 matches the current OpenAI guidance for complex production workflows.
+          # https://platform.openai.com/api-keys
+          OPENAI_MODEL: gpt-5.5
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        with:
+          script: |
+            const fs = require("fs");
+
+            if (!process.env.OPENAI_API_KEY) {
+              throw new Error("Set the OPENAI_API_KEY repository secret before running this workflow.");
+            }
+
+            const { owner, repo } = context.repo;
+            const systemPrompt = fs.readFileSync("system_prompt.md", "utf8");
+            const currentReadme = fs.readFileSync("README.md", "utf8");
+            const generatedAt = new Date().toISOString();
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: "all",
+              per_page: 100,
+            });
+
+            const createOpenAiResponse = async (body) => {
+              const openAiResponse = await fetch("https://api.openai.com/v1/responses", {
+                method: "POST",
+                headers: {
+                  "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(body),
+              });
+
+              if (!openAiResponse.ok) {
+                throw new Error(`OpenAI request failed with ${openAiResponse.status}: ${await openAiResponse.text()}`);
+              }
+
+              return await openAiResponse.json();
+            };
+
+            const getOpenAiText = (responseJson) => {
+              const text = responseJson.output
+                ?.flatMap((outputItem) => outputItem.content || [])
+                .find((contentItem) => contentItem.type === "output_text")
+                ?.text;
+
+              if (text === undefined || text.trim().length === 0) {
+                throw new Error("OpenAI response did not include output text.");
+              }
+
+              return text;
+            };
+
+            // Send every issue and comment object to OpenAI so it decides which links are fork submissions.
+            const rawIssues = [];
+
+            for (const issue of issues) {
+              if (issue.pull_request !== undefined) {
+                continue;
+              }
+
+              const comments = await github.paginate(github.rest.issues.listComments, {
+                owner,
+                repo,
+                issue_number: issue.number,
+                per_page: 100,
+              });
+
+              if (comments.length !== issue.comments) {
+                throw new Error(`Loaded ${comments.length} comments for issue #${issue.number}, but GitHub reported ${issue.comments}.`);
+              }
+
+              rawIssues.push({
+                issue,
+                comments,
+              });
+            }
+
+            const extractionResponseJson = await createOpenAiResponse({
+              model: process.env.OPENAI_MODEL,
+              instructions: systemPrompt,
+              input: JSON.stringify(
+                {
+                  task: "extract_fork_submissions",
+                  repository: `${owner}/${repo}`,
+                  generatedAt,
+                  currentReadme,
+                  issues: rawIssues,
+                },
+                null,
+                2,
+              ),
+              reasoning: {
+                // TODO: AI-PICKED-VALUE: medium reasoning lets the model separate real submissions from links that are only examples.
+                effort: "medium",
+              },
+              text: {
+                format: {
+                  type: "json_schema",
+                  name: "submitted_forks",
+                  strict: true,
+                  schema: {
+                    type: "object",
+                    additionalProperties: false,
+                    required: ["forks"],
+                    properties: {
+                      forks: {
+                        type: "array",
+                        items: {
+                          type: "object",
+                          additionalProperties: false,
+                          required: ["url", "name", "description", "sourceIssueNumbers"],
+                          properties: {
+                            url: { type: "string" },
+                            name: { type: "string" },
+                            description: { type: "string" },
+                            sourceIssueNumbers: {
+                              type: "array",
+                              items: { type: "integer" },
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                verbosity: "low",
+              },
+            });
+
+            const extractedForks = JSON.parse(getOpenAiText(extractionResponseJson)).forks;
+            const forkOfUrl = {};
+
+            for (const extractedFork of extractedForks) {
+              const parsedUrl = new URL(extractedFork.url);
+              const hostname = parsedUrl.hostname.toLowerCase();
+              const host = hostname.startsWith("www.") ? hostname.slice(4) : hostname;
+              const pathParts = parsedUrl.pathname.split("/").filter((pathPart) => pathPart.length > 0);
+              let url = `${parsedUrl.protocol}//${host}`;
+
+              if (host === "github.com" && pathParts.length >= 2) {
+                const repoName = pathParts[1].toLowerCase().endsWith(".git") ? pathParts[1].slice(0, -4) : pathParts[1];
+                url = `https://github.com/${pathParts[0]}/${repoName}`;
+              } else if (pathParts.length > 0) {
+                const lastPathPart = pathParts[pathParts.length - 1];
+                pathParts[pathParts.length - 1] = lastPathPart.toLowerCase().endsWith(".git") ? lastPathPart.slice(0, -4) : lastPathPart;
+                url = `${parsedUrl.protocol}//${host}/${pathParts.join("/")}`;
+              }
+
+              const isThisRepository = url.toLowerCase() === `https://github.com/${owner}/${repo}`.toLowerCase();
+
+              if (isThisRepository) {
+                continue;
+              }
+
+              if (forkOfUrl[url] === undefined) {
+                forkOfUrl[url] = {
+                  url,
+                  name: extractedFork.name,
+                  issueDescription: extractedFork.description,
+                  sourceIssueNumbers: extractedFork.sourceIssueNumbers,
+                  stars: null,
+                  description: "",
+                };
+              }
+            }
+
+            // Fetch GitHub metadata after deduping so stars come from GitHub instead of the issue text.
+            for (const fork of Object.values(forkOfUrl)) {
+              const parsedUrl = new URL(fork.url);
+
+              if (parsedUrl.hostname !== "github.com") {
+                continue;
+              }
+
+              const [repoOwner, repoName] = parsedUrl.pathname.split("/").filter((pathPart) => pathPart.length > 0);
+
+              try {
+                const response = await github.rest.repos.get({
+                  owner: repoOwner,
+                  repo: repoName,
+                });
+
+                fork.url = response.data.html_url;
+                fork.host = parsedUrl.hostname;
+                fork.fullName = response.data.full_name;
+                fork.name = fork.name || response.data.name;
+                fork.description = response.data.description || "";
+                fork.stars = response.data.stargazers_count;
+              } catch (error) {
+                fork.metadataError = error.message;
+              }
+            }
+
+            const forks = Object.values(forkOfUrl).sort((forkA, forkB) => {
+              const starsA = forkA.stars === null ? -1 : forkA.stars;
+              const starsB = forkB.stars === null ? -1 : forkB.stars;
+
+              if (starsA !== starsB) {
+                return starsB - starsA;
+              }
+
+              return forkA.url.localeCompare(forkB.url);
+            });
+
+            const input = {
+              task: "write_readme",
+              repository: `${owner}/${repo}`,
+              generatedAt,
+              currentReadme,
+              issues: rawIssues,
+              forks,
+            };
+
+            // Ask OpenAI to rewrite only the README from the issue data and GitHub metadata.
+            const readmeResponseJson = await createOpenAiResponse({
+              model: process.env.OPENAI_MODEL,
+              instructions: systemPrompt,
+              input: JSON.stringify(input, null, 2),
+              reasoning: {
+                // TODO: AI-PICKED-VALUE: low reasoning is enough because the workflow has already gathered and sorted the repo data.
+                effort: "low",
+              },
+              text: {
+                verbosity: "low",
+              },
+            });
+            const readme = getOpenAiText(readmeResponseJson);
+
+            fs.writeFileSync("README.md", `${readme.trim()}\n`);
+
+      - name: Commit README update
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- README.md; then
+            echo "README.md is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update README from submitted forks"
+          git push
