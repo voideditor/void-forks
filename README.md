@@ -5,19 +5,19 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 ## Top Projects
 
 - [NeuralInverse](https://github.com/NeuralInverse/neuralinverse)
-  - Code Modern. Code Legacy. Code Firmware. Open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
+  - Name: Code Modern. Code Legacy. Code Firmware. Open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
   - ⭐️ 156 stars
 - [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
-  - Open-source AI IDE powered by local & cloud LLMs. A privacy-first alternative to Cursor.
+  - Name: Open-source AI IDE powered by local and cloud LLMs. A privacy-first alternative to Cursor.
   - ⭐️ 104 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
-  - Your True Open Source AI IDE. The only AI IDE that actually teaches you how to code.
+  - Name: Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 10 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
-  - Rust-native AI IDE — AST indexing, QuickJS sandbox, AES-256-GCM encrypted, Open VSX: the first extension runtime for a Rust IDE. Zero Electron. Zero compromise.
+  - Name: Rust-native AI IDE — AST indexing, QuickJS sandbox, AES-256-GCM encrypted, Open VSX: the first extension runtime for a Rust IDE. Zero Electron. Zero compromise.
   - ⭐️ 9 stars
 - [Void Fork by jcommaret](https://github.com/jcommaret/void)
-  - Another fork of Void, supposedly maintained by one of the early contributors of Void.
+  - Name: Another fork of Void, supposedly maintained by one of the early contributors of Void.
   - ⭐️ 2 stars
 
 ## More
