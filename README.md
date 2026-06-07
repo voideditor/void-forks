@@ -28,5 +28,5 @@ Last updated: June 7, 2026.
 <!-- 
 ## Reports
 The claim that https://github.com/jcommaret/void is maintained by one of the early contributors of Void is unverified, so it was included with "supposedly."
-Issue #4 ("opine") did not include a GitHub link or identifiable project URL, so no entry was added.
+Issue #4 ("opine") did not include a GitHub link or identifiable project URL, but a maintainer suggested it may refer to OPIDE, which was already included from Issue #3.
  -->
