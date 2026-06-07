@@ -18,7 +18,7 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
   - ⭐️ 9 stars
 - [Void Fork by jcommaret](https://github.com/jcommaret/void)
   - Another fork of Void, supposedly maintained by one of the early contributors of Void.
-  - ⭐️ 1 stars
+  - ⭐️ 2 stars
 
 ## More
 To reach a human, email hello@voideditor.com.
