@@ -40,10 +40,10 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 ## Top Projects
 
 - [Name1](https://github.com/{repo})
-  - {Name1}: {brief description if available, or github description}
+  - {brief description if available, or github description}
   - ⭐️ {number} stars
 - [Name2](https://github.com/{repo})
-  - {Name2}: {...}
+  - {...}
   - ⭐️ {number} stars
 - ... 
 - ...
