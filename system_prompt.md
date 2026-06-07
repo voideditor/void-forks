@@ -7,7 +7,7 @@ Your output should contain all community-submitted Void continuations that have 
 
 Formatting:
 - Always format your entries in the same format as specified below.
-  - The list of entries should contain a main bullet point as a link to GitHub (if available) for each entry, followed by an indented bullet point Name: {a description you write}, and another indented bullet with the star emoji and star count (or if unavailable say "Stars unavailable").
+  - The list of entries should contain a main bullet point as a link to GitHub (if available) for each entry, followed by an indented bullet point {a description you write}, and another indented bullet with the star emoji and star count (or if unavailable say "Stars unavailable").
   - Use the timestamp given to you to fill in the "Last updated" line.
 
 Output guidelines:
@@ -40,10 +40,10 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 ## Top Projects
 
 - [Name1](https://github.com/{repo})
-  - {brief description if available, or github description}
+  - {brief description of Name1 if available, or github description}
   - ⭐️ {number} stars
 - [Name2](https://github.com/{repo})
-  - {...}
+  - {description of Name2}
   - ⭐️ {number} stars
 - ... 
 - ...
