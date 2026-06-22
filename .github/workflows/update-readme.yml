@@ -24,9 +24,9 @@ jobs:
       - name: Build README with issue submissions
         uses: actions/github-script@v9
         env:
-          # TODO: AI-PICKED-VALUE: gpt-5.5 matches the current OpenAI guidance for complex production workflows.
+          # TODO: AI-PICKED-VALUE: gpt-5.5-pro is the requested higher-compute GPT-5.5 model for README generation.
           # https://platform.openai.com/api-keys
-          OPENAI_MODEL: gpt-5.5
+          OPENAI_MODEL: gpt-5.5-pro
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           script: |
@@ -118,8 +118,8 @@ jobs:
                 2,
               ),
               reasoning: {
-                // TODO: AI-PICKED-VALUE: medium reasoning lets the model separate real submissions from links that are only examples.
-                effort: "medium",
+                // TODO: AI-PICKED-VALUE: xhigh reasoning gives the model the requested maximum reasoning budget for fork extraction.
+                effort: "xhigh",
               },
               text: {
                 format: {
@@ -245,8 +245,8 @@ jobs:
               instructions: systemPrompt,
               input: JSON.stringify(input, null, 2),
               reasoning: {
-                // TODO: AI-PICKED-VALUE: low reasoning is enough because the workflow has already gathered and sorted the repo data.
-                effort: "low",
+                // TODO: AI-PICKED-VALUE: xhigh reasoning gives the model the requested maximum reasoning budget for the README rewrite.
+                effort: "xhigh",
               },
               text: {
                 verbosity: "low",
