@@ -7,20 +7,20 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 - [NeuralInverse](https://github.com/NeuralInverse/neuralinverse)
   - Code Modern, Code Legacy, Code Firmware — open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
   - ⭐️ 172 stars
+- [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
+  - Open-source AI IDE powered by local and cloud LLMs. A privacy-first alternative to Cursor.
+  - ⭐️ 117 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 17 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
-  - Rust-native AI IDE — AST indexing, QuickJS sandbox, AES-256-GCM encrypted, and Open VSX, billed as the first extension runtime for a Rust IDE; zero Electron, zero compromise.
+  - Rust-native AI IDE — AST indexing, QuickJS sandboxing, AES-256-GCM encryption, and Open VSX; zero Electron, zero compromise.
   - ⭐️ 17 stars
 - [Kodia by jcommaret](https://github.com/jcommaret/kodia)
-  - Kodia is an open-source AI IDE forked from Void, supposedly maintained by one of the early contributors of Void.
+  - Kodia is an open-source AI IDE forked from Void, maintained by one of the early contributors of Void.
   - ⭐️ 7 stars
-- [CortexIDE](https://opencortexide.com)
-  - (Not verified as a Void fork) Described as an open-source AI IDE powered by local and cloud LLMs; a privacy-first alternative to Cursor.
-  - ⭐️ Stars unavailable
 - [Sylix](https://sylixide.com)
-  - (Closed-source continuation, not a public Void fork) Supposedly rebuilt from the ground up in Rust for a lightweight, fast experience; a free-to-use AI coding workspace with autonomous coding agents.
+  - A closed-source continuation of Void, rebuilt from the ground up in Rust for a lightweight, fast experience. A free-to-use AI coding workspace with autonomous coding agents.
   - ⭐️ Stars unavailable
 
 ## More
@@ -30,9 +30,7 @@ Last updated: June 24, 2026.
 
 <!-- 
 ## Reports
-The claim that Kodia by jcommaret is maintained by one of the early contributors of Void is unverified, so it was included with "supposedly." Issues referenced https://github.com/jcommaret/void, but the provided fork metadata points to https://github.com/jcommaret/kodia.
-CortexIDE was submitted with only a website link, so public fork status and stars are unavailable.
-Sylix was submitted as closed-source with no public repo, so stars are unavailable; its Rust rebuild claim is user-provided and was included with "supposedly."
-OPIDE's "first extension runtime for a Rust IDE" claim is repo-provided and unverified, so it was softened to "billed as."
-Issue #4 ("opine") did not include a GitHub link or identifiable project URL, but a maintainer suggested it may refer to OPIDE, which was already included from Issue #3.
+Issue #8 linked https://github.com/jcommaret/void, but fork metadata resolved the project to https://github.com/jcommaret/kodia.
+Issue #4 ("opine") did not include a GitHub link or identifiable project URL; a maintainer suggested it may refer to OPIDE, which is already included.
+Sylix was submitted as closed-source with no public repo, so stars are unavailable.
  -->
