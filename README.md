@@ -6,13 +6,13 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 
 - [NeuralInverse](https://github.com/NeuralInverse/neuralinverse)
   - Code Modern, Code Legacy, Code Firmware — open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
-  - ⭐️ 171 stars
+  - ⭐️ 172 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 17 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
   - Rust-native AI IDE — AST indexing, QuickJS sandbox, AES-256-GCM encrypted, and Open VSX, billed as the first extension runtime for a Rust IDE; zero Electron, zero compromise.
-  - ⭐️ 16 stars
+  - ⭐️ 17 stars
 - [Kodia by jcommaret](https://github.com/jcommaret/kodia)
   - Kodia is an open-source AI IDE forked from Void, supposedly maintained by one of the early contributors of Void.
   - ⭐️ 7 stars
@@ -26,7 +26,7 @@ This is a list of forks and continuations of Void. It's maintained by AI. To tel
 ## More
 To reach a human, email hello@voideditor.com.
 
-Last updated: June 22, 2026.
+Last updated: June 24, 2026.
 
 <!-- 
 ## Reports
