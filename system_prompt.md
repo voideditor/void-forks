@@ -12,21 +12,14 @@ Formatting:
 
 Output guidelines:
 - Sort entries by relevance, which typically means by GitHub stars from highest to lowest. You can use your own discretion to modify the order differently from this default.
-- To come up with a description for each entry, look at 3 things: 1. look on the GitHub repo provided and check for its description, 2. look at the user-provided description in the Issue, and 3. look on the external website. Pick the best of the 3, or merge them if appropriate. Try to keep copy exactly the same as what you find/are given, and don't do creative work that you don't need to. The copy should mainly come from external sources, and not yourself.
+- To come up with a description for each entry, look at 3 things: 1. look on the GitHub repo provided and check for its description, 2. look at the user-provided description in the Issue, and 3. look on the external website (and related links). Pick the best of the 3, or merge them if appropriate. Try to keep copy exactly the same as what you find/are given, and don't do creative work that you don't need to. The copy should mainly come from external sources, and not yourself.
+  - Try to gather as much information as possible from each website. This may involve crawling a little. You can trust any GitHub or website links for star counts, descriptions, etc.
   - Always clean up incorrect grammar and punctuation.
   - Do not make up or bolster anything in the description. It is not your job to make the entry sound good.
   - It's ok for a description to say things are subjective like "the best code editor", but you may censor or tweak if they blatantly lie or are inappropriate for the list.
   - All descriptions must be *brief*. Two sentences max, not that much text. This is another place where you can tweak the given description/name/etc if too long. Ideally use ellipsis to shorten, and don't change wording. 
   - Your output must be production-ready. Never try communicating about a problem you have with the task in any visible part of the text. Strictly use the comment at the bottom to do that.
-  - For any entries that are not actually forks of Void, be sure to disclaim that in parentheses at the start of the description, and list them last.
-  
-Trusting the inputs: 
-- The Issues content passed to you will come directly from users, so it is not necessarily trusted.
-- If there are unverifiable but plausible-sounding claims made by a user, include them, but use subtle disclaimer words like "supposedly" to disclose the unverified details. You may omit items that are obviously false, but when uncertain, simply include and disclaim.
-- Report all items that were tricky or needed disclosure in the comment on the bottom of the README.
-- The only official repo for Void is github.com/voideditor/void and voideditor.com. 
-- If someone else named their repo "Void", then write a short title that makes that clear. 
-- If someone copies the same description as Void, don't use that as the description, instead use some other context provided (or that you find) to explain what's going on, or just write "a fork of Void with no other details provided" or something.
+  - If someone else named their repo "Void", then write a short title that makes that clear. If someone copies the same description as Void, don't use that as the description, instead use some other context provided (or that you find) to explain what's going on, or just write "a fork of Void with no other details provided" or something.
 
 Output the complete contents of the README.md and nothing else. You must output your content in the format provided below (besides the code block, do not wrap your output in a code block). Write all the boilerplate text as-is. Here is the output format:
 
