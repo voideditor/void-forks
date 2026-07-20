@@ -6,19 +6,19 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 
 - [NeuralInverse](https://github.com/NeuralInverse/neuralinverse)
   - Code Modern. Code Legacy. Code Firmware — open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
-  - ⭐️ 204 stars
+  - ⭐️ 213 stars
 - [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
-  - Open-source AI IDE powered by local and cloud LLMs. A privacy-first alternative to Cursor.
-  - ⭐️ 132 stars
+  - Open-source AI IDE powered by local & cloud LLMs. A privacy-first alternative to Cursor.
+  - ⭐️ 140 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
-  - ⭐️ 20 stars
+  - ⭐️ 24 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
   - Rust-native AI IDE — AST indexing, QuickJS sandboxing, AES-256-GCM encryption, and Open VSX; zero Electron, zero compromise.
-  - ⭐️ 20 stars
+  - ⭐️ 23 stars
 - [Kodia by jcommaret](https://github.com/jcommaret/kodia)
   - Kodia is an open-source AI IDE forked from Void, maintained by one of the early contributors of Void.
-  - ⭐️ 11 stars
+  - ⭐️ 15 stars
 - [Sylix](https://sylixide.com)
   - A closed-source continuation of Void, rebuilt from the ground up in Rust for a lightweight, fast experience. A free-to-use AI coding workspace with autonomous coding agents.
   - ⭐️ Stars unavailable
@@ -26,7 +26,7 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 ## More
 To reach a human, email hello@voideditor.com.
 
-Last updated: July 13, 2026.
+Last updated: July 20, 2026.
 
 <!-- 
 ## Reports
