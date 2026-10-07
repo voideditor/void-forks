@@ -10,15 +10,15 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 - [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
   - Open-source AI IDE powered by local & cloud LLMs. A privacy-first alternative to Cursor.
   - ⭐️ 143 stars
+- [Kodia by jcommaret](https://github.com/jcommaret/kodia)
+  - Kodia is an open-source AI IDE forked from Void, maintained by one of the early contributors of Void.
+  - ⭐️ 28 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
   - Rust-native AI IDE — AST indexing, QuickJS sandboxing, AES-256-GCM encryption, and Open VSX; zero Electron, zero compromise.
   - ⭐️ 27 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 25 stars
-- [Kodia by jcommaret](https://github.com/jcommaret/kodia)
-  - Kodia is an open-source AI IDE forked from Void, maintained by one of the early contributors of Void.
-  - ⭐️ 14 stars
 - [Loophole Editor](https://github.com/loophole-ai/loophole-ide)
   - Loophole — the AI IDE that thinks while you code.
   - ⭐️ 1 star
