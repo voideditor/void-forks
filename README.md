@@ -6,25 +6,28 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 
 - [NeuralInverse](https://github.com/NeuralInverse/neuralinverse)
   - Code Modern. Code Legacy. Code Firmware — open-source AI-native IDE with agentic coding, Power Mode, legacy modernization, and firmware development.
-  - ⭐️ 232 stars
+  - ⭐️ 233 stars
 - [CortexIDE](https://github.com/OpenCortexIDE/cortexide)
   - Open-source AI IDE powered by local & cloud LLMs. A privacy-first alternative to Cursor.
-  - ⭐️ 177 stars
+  - ⭐️ 181 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
   - Rust-native AI IDE — AST indexing, QuickJS sandboxing, AES-256-GCM encryption, and Open VSX; zero Electron, zero compromise.
-  - ⭐️ 49 stars
+  - ⭐️ 52 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 37 stars
 - [Kodia by jcommaret](https://github.com/jcommaret/kodia)
   - Kodia is an open-source AI IDE forked from Void, maintained by one of the early contributors of Void.
-  - ⭐️ 28 stars
+  - ⭐️ 34 stars
 - [Loophole Editor](https://github.com/loophole-ai/loophole-ide)
   - Loophole — the AI IDE that thinks while you code.
-  - ⭐️ 16 stars
+  - ⭐️ 17 stars
 - [Lumina](https://github.com/lumina-ide/lumina-source)
   - An IDE/editor featuring an agent and local AI that requires no APIs or servers. It runs the model directly and includes an efficient agent that is free for life.
   - ⭐️ 8 stars
+- [V3Code](https://github.com/HeavenFYouMissed/V3Code)
+  - A free, open-source AI code editor built on Void, where the agent can touch everything.
+  - ⭐️ 2 stars
 - [Sylix](https://sylixide.com)
   - A closed-source continuation of Void, rebuilt from the ground up in Rust for a lightweight, fast experience. A free-to-use AI coding workspace with autonomous coding agents.
   - ⭐️ Stars unavailable
@@ -32,7 +35,7 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 ## More
 To reach a human, email hello@voideditor.com.
 
-Last updated: October 12, 2026.
+Last updated: November 2, 2026.
 
 <!-- 
 ## Reports
