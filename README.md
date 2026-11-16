@@ -12,7 +12,7 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
   - ⭐️ 185 stars
 - [OPIDE](https://github.com/OpenPawz/OPIDE)
   - Rust-native AI IDE — AST indexing, QuickJS sandboxing, AES-256-GCM encryption, and Open VSX; zero Electron, zero compromise.
-  - ⭐️ 52 stars
+  - ⭐️ 53 stars
 - [A-Coder](https://github.com/hamishfromatech/A-Coder)
   - Your true open-source AI IDE. The only AI IDE that actually teaches you how to code.
   - ⭐️ 38 stars
@@ -27,7 +27,7 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
   - ⭐️ 8 stars
 - [V3Code](https://github.com/HeavenFYouMissed/V3Code)
   - A free, open-source AI code editor built on Void, where the agent can touch everything.
-  - ⭐️ 2 stars
+  - ⭐️ 3 stars
 - [Sylix](https://sylixide.com)
   - A closed-source continuation of Void, rebuilt from the ground up in Rust for a lightweight, fast experience. A free-to-use AI coding workspace with autonomous coding agents.
   - ⭐️ Stars unavailable
@@ -35,7 +35,7 @@ This is a list of forks and continuations of [Void](https://github.com/voidedito
 ## More
 To reach a human, email hello@voideditor.com.
 
-Last updated: November 9, 2026.
+Last updated: November 16, 2026.
 
 <!-- 
 ## Reports
